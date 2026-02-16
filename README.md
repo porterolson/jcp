@@ -45,7 +45,7 @@ Run to create a conda environment using the yaml file in the repo.
 
 This script is used for getting jobs that have qualification lists and valid html and direct job link and then posting them to the Wordpress site using the Wordpress REST API.
 
-NEEDS: `USERNAME`, `APP_PASSWORD`, `token` (instructions in the code)
+NEEDS: `USERNAME`, `APP_PASSWORD`, `token` (instructions to get these are in **APPENDIX**)
 
 OUTPUTS: a csv file containing the jobs posted to Wordpress (e.g. `2-16-2026_baker_seattle_jobs.csv`)
 
@@ -57,7 +57,7 @@ ALSO posts directly to Wordpress using Wordpress API
 
 This script uses Wordpress API to loop thru the check the direct links of each post to see if the job is still available or if the page is returns a Error 404 or soft 404.
 
-NEEDS: `USERNAME`, `APP_PASSWORD`, `GEMINI_API_KEY`, `POST_TYPE`
+NEEDS: `USERNAME`, `APP_PASSWORD`, `GEMINI_API_KEY`, `POST_TYPE` (further instructions in **APPENDIX**)
 
 OUTPUTS: None
 
@@ -67,7 +67,32 @@ ALSO Privitizes all posts with non 200 response codes or have a high probability
 
 ## (Appendix)
 
+#### (A.1)
 `original_treat.txt` contains the original treatment text script where a user recieves the same treatment every time, whereas the current script in `get_jobs_github.py` has a different treatment every time you reload the page. I include `original_treat.txt` in this repo so that if one desires to test/use the original treatment it is readily available.
+
+#### (A.2) Getting Wordpress Username and Password
+Start by emailing `Doctor Eastmond` and asking to be made an admin on Wordpress. This is the website building software we use to host and edit the JCP website, so you need access to be able to post job ads, remove job ads, edit website content, and access the data we collect.
+
+If you don’t already have a Wordpress account, you’ll have to make one. It’s probably best to create it using your google account.
+
+Once you have an account and are an admin, goto `https://jobconnectionsproject.org/wp-admin/index.php`
+
+**ONCE AGAIN, DO NOT RUN THE UPDATER!!**
+
+On the side menu goto `Users → Profile`
+
+Scroll down to the bottom until you see this:
+<img width="1698" height="571" alt="image" src="https://github.com/user-attachments/assets/608db582-e5c7-4ddd-ab67-e916b5366a48" />
+
+Enter a new name for you application_password (NOTE: this is not your username).
+
+Make sure to save/write down the password Wordpress then generates for you, this is your `application password`. Your `USERNAME` is simply your wordpress username (not the name of app_password)
+
+Put these in the scripts and you are ready to use Wordpress API!
+
+#### (A.3) Getting GitHub Models Token
+
+
 
 
 
