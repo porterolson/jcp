@@ -47,8 +47,11 @@ OUTPUTS: None
 
 ALSO Privitizes all posts with non 200 response codes or have a high probability of being a soft 404 error.
 
+------
 
-#### (A.1)
+## (A.1)
+
+`original_treat.txt` contains the original treatment text script where a user recieves the same treatment every time, whereas the current script in `get_jobs_github.py` has a different treatment every time you reload the page. I include `original_treat.txt` in this repo so that if one desires to test/use the original treatment it is readily available.
 
 
 
