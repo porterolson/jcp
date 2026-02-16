@@ -85,9 +85,9 @@ On the side menu goto `Users → Profile`
 Scroll down to the bottom until you see this:
 <img width="1698" height="571" alt="image" src="https://github.com/user-attachments/assets/608db582-e5c7-4ddd-ab67-e916b5366a48" />
 
-Enter a new name for you application_password (NOTE: this is not your username).
+Enter a new name for you application password (NOTE: this is not your username).
 
-Make sure to save/write down the password Wordpress then generates for you, this is your `application password`. Your `USERNAME` is simply your wordpress username (not the name of app_password)
+Click `Add Application Password`, make sure to save/write down the password Wordpress then generates for you, this is your `APP_PASSWORD`. Your `USERNAME` is simply your wordpress username (not the name of application password you just entered)
 
 Put these in the scripts and you are ready to use Wordpress API!
 
