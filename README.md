@@ -70,6 +70,7 @@ ALSO Privitizes all posts with non 200 response codes or have a high probability
 #### (A.1) original_treat.txt
 `original_treat.txt` contains the original treatment text script where a user recieves the same treatment every time, whereas the current script in `get_jobs_github.py` has a different treatment every time you reload the page. I include `original_treat.txt` in this repo so that if one desires to test/use the original treatment it is readily available.
 
+------
 #### (A.2) Getting Wordpress Username and Password
 Start by emailing `Doctor Eastmond` and asking to be made an admin on Wordpress. This is the website building software we use to host and edit the JCP website, so you need access to be able to post job ads, remove job ads, edit website content, and access the data we collect.
 
@@ -90,6 +91,8 @@ Make sure to save/write down the password Wordpress then generates for you, this
 
 Put these in the scripts and you are ready to use Wordpress API!
 
+-------
+
 #### (A.3) Getting GitHub Models Token
 
 Start by creating a GitHub account.
@@ -106,7 +109,7 @@ Leave all the settings at their default and pick an expiration date (your token 
 
 Save your token to a safe place, and then use this in place of `token` in `get_jobs_github.py`
 
-
+--------
 #### (A.4) Getting Gemeni Token
 
 
