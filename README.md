@@ -27,12 +27,22 @@ Run to create a conda environment using the yaml file in the repo.
 
 ##### (4.1) Getting Job Script
 
-This script is used for getting jobs that have qualification lists and valid html and direct job link and then posting them to the wordpress site using the Wordpress REST API.
+This script is used for getting jobs that have qualification lists and valid html and direct job link and then posting them to the Wordpress site using the Wordpress REST API.
 
 NEEDS: `USERNAME`, `APP_PASSWORD`, `token` (instructions in the code)
 
-OUTPUTS: a csv file containing the jobs posted to wordpress (e.g. `2-16-2026_baker_seattle_jobs.csv`)
+OUTPUTS: a csv file containing the jobs posted to Wordpress (e.g. `2-16-2026_baker_seattle_jobs.csv`)
 
-also posts directly to wordpress using Wordpress API
+ALSO posts directly to Wordpress using Wordpress API
+
+##### (4.2) Job Expiration Script
+
+This script uses Wordpress API to loop thru the check the direct links of each post to see if the job is still available or if the page is returns a Error 404 or soft 404.
+
+NEEDS: `USERNAME`, `APP_PASSWORD`, `GEMINI_API_KEY`, `POST_TYPE`
+
+OUTPUTS: None
+
+ALSO Privitizes all posts with non 200 response codes or have a high probability of being a soft 404 error.
 
 
