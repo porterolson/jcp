@@ -18,23 +18,20 @@ USERNAME = None #your wordpress username
 APP_PASSWORD = None #to generate a api password start from the dashboard goto users -> profile -> scroll down to application passwords
 
 os.environ["GEMINI_API_KEY"] = None #Gemeni API key, is free can go get it from googles gemeni api online
+
+#what post type to look at and determine if it has expired, in production use publish, for testing use draft
+POST_TYPE=None # publish, draft, private, etc.
+
 ######################################################
-
-
-
-
 
 
 URL = "https://jobconnectionsproject.org/wp-json/wp/v2/posts"
 
 
-
-
-
 params = {
     "per_page": 100,   # max is 100
     "page": 1,
-    "status": "draft",   # publish, draft, private, etc.
+    "status": f"{POST_TYPE}",   # publish, draft, private, etc.
 }
 
 r = requests.get(
