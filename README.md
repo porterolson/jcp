@@ -1,7 +1,17 @@
 # Job Connections Project Repo
 
 #### (1) Clone Repo
-Clone the repository to your local machine:
+
+Open your local code editor (e.g. VS Code, PyCharm, I use VS Code personally, so this tutorial is for VS Code)
+If you do not have VS Code you can download it for free here: https://code.visualstudio.com/download
+
+Also make sure you have Git, install it here if you do not: https://git-scm.com/install/
+
+In VS Code `File → Open Folder` and select your project folder to open it in VS Code
+
+In the top menu `Terminal → New Terminal` to open an instance of the VS Code Terminal
+
+Clone the repository to your local machine (need git installed; after installing git, you should restart your VS Code instance):
 
 `git clone https://github.com/porterolson/jcp.git`
 
@@ -12,7 +22,7 @@ https://www.anaconda.com/download
 
 #### (3) Setup Environment
 
-Once downloaded `Windows Key + S` or `Command (⌘) + Space bar` then search for Anaconda Prompt, open it.
+Once downloaded and installed `Windows Key + S` or `Command (⌘) + Space bar` then search for Anaconda Prompt, open it.
 
 Change your directory to where you cloned this repo:
 
