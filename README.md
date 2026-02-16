@@ -1,6 +1,6 @@
 # Job Connections Project Repo
 
-### (1) Setup Repo
+## (1) Setup Repo
 -------
 ##### (1.1) Get Local Code Editor
 Open your local code editor (e.g. VS Code, PyCharm, I use VS Code personally, so this tutorial is for VS Code)
@@ -23,12 +23,12 @@ Clone the repository to your local machine (need git installed; after installing
 `git clone https://github.com/porterolson/jcp.git`
 
 ------
-### (2) Download Anaconda
+## (2) Download Anaconda
 Download Anaconda if you do not have it already:
 
 https://www.anaconda.com/download
 
-### (3) Setup Environment
+## (3) Setup Environment
 
 Once downloaded and installed `Windows Key + S` or `Command (⌘) + Space bar` then search for Anaconda Prompt, open it.
 
@@ -40,7 +40,7 @@ Run to create a conda environment using the yaml file in the repo.
 
 `conda env create -f def_dev.yml`
 
-### (4) Running the scripts
+## (4) Running the scripts
 ------
 
 ##### (4.1) Getting Job Script
@@ -67,7 +67,7 @@ ALSO Privitizes all posts with non 200 response codes or have a high probability
 
 ------
 
-## (A.1)
+## (Appendix)
 
 `original_treat.txt` contains the original treatment text script where a user recieves the same treatment every time, whereas the current script in `get_jobs_github.py` has a different treatment every time you reload the page. I include `original_treat.txt` in this repo so that if one desires to test/use the original treatment it is readily available.
 
