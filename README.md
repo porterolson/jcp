@@ -1,14 +1,19 @@
 # Job Connections Project Repo
 
-#### (1) Clone Repo
-
+#### (1) Setup Repo
+-------
+##### (1.1) Get Local Code Editor
 Open your local code editor (e.g. VS Code, PyCharm, I use VS Code personally, so this tutorial is for VS Code)
 If you do not have VS Code you can download it for free here: https://code.visualstudio.com/download
 
+-------
+##### (1.2) Get Git
 Also make sure you have Git, install it here if you do not: https://git-scm.com/install/
 
 During install of Git, if prompted `Add Git to PATH` make sure that option or box is checked!
 
+-------
+##### (1.3) Clone Repo
 In VS Code `File → Open Folder` and select your project folder to open it in VS Code
 
 In the top menu `Terminal → New Terminal` to open an instance of the VS Code Terminal
