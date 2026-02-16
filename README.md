@@ -6,6 +6,7 @@ Open your local code editor (e.g. VS Code, PyCharm, I use VS Code personally, so
 If you do not have VS Code you can download it for free here: https://code.visualstudio.com/download
 
 Also make sure you have Git, install it here if you do not: https://git-scm.com/install/
+During install, if prompted `Add Git to PATH` make sure that option or box is checked!
 
 In VS Code `File → Open Folder` and select your project folder to open it in VS Code
 
