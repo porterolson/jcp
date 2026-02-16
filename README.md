@@ -111,11 +111,29 @@ Leave all the settings at their default and pick an expiration date (your token 
 
 Save your token to a safe place, and then use this in place of `token` in `get_jobs_github.py`
 
+You are now ready to use GitHub Models!
+
 --------
 #### (A.4) Getting Gemeni Token
 
+_NOTE: As of making this Google's models have much higher input token limit, so I use Gemeni models to look at html of pages to determine soft 404 errors. I do not use GitHub because Azure limits input tokens to ~8000; if someone is feeling ambitious, one future change may be to rewrite the code so that we only need to use one model and one API KEY_
+
+_Also, Google may change access to their older models as well; if so change `model = "gemini-2.5-flash-lite"` to a newer model_
 
 
+First, goto https://ai.google.dev/gemini-api/docs
+
+Click "Get API Key"
+<img width="1915" height="836" alt="image" src="https://github.com/user-attachments/assets/442ce9ea-15a4-4d74-a417-c4e3344f695d" />
+
+Sign in to your google account.
+
+Click on this:
+<img width="1918" height="515" alt="image" src="https://github.com/user-attachments/assets/e2777b93-855b-4e93-a204-3a8c7efbd410" />
+
+Copy your API Key and put it in `os.environ["GEMINI_API_KEY"] = ` in `check_job_expiration_github.py`
+
+You are now ready to use Gemeni in your code!
 
 
 
