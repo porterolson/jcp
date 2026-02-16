@@ -22,6 +22,7 @@ Clone the repository to your local machine (need git installed; after installing
 
 `git clone https://github.com/porterolson/jcp.git`
 
+------
 #### (2) Download Anaconda
 Download Anaconda if you do not have it already:
 
