@@ -95,7 +95,9 @@ Put these in the scripts and you are ready to use Wordpress API!
 
 #### (A.3) Getting GitHub Models Token
 
-Start by creating a GitHub account.
+_NOTE: GitHub may change access to older models (i.e. gpt 4.1-mini), if this model is no longer available, the following instrucitons will still help you generate a GitHub models token. Further, you can change the model used in `get_jobs_github.py` by changing `model = "openai/gpt-4.1-mini"` to some other model._
+
+First, sttart by creating a GitHub account.
 
 Next goto `https://github.com/marketplace/models/azure-openai/gpt-4-1-mini`
 
