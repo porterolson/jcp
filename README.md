@@ -30,7 +30,7 @@ https://www.anaconda.com/download
 
 ## (3) Setup Environment
 
-Once downloaded and installed `Windows Key + S` or `Command (⌘) + Space bar` then search for Anaconda Prompt, open it.
+Once Anaconda is downloaded and installed `Windows Key + S` or `Command (⌘) + Space bar` then search for Anaconda Prompt, open it.
 
 Change your directory to where you cloned this repo:
 
